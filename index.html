@@ -3,75 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./static/CSS/style.css">
-    <title>Document</title>
+    <title>e-comers-alibaba</title>
 </head>
+
 <body>
-    <!-- encabezado -->
+    <!-- Encabezado -->
     <header>
         <nav>
-            <!-- logo -->
-            <div id="logo">
-                <a href="/" > <span> CAC - Movies</span></a>
+            <div>
+                <ul>
+                    <li> <a href="/">E-comers-alibaba</a></li>
+                    <li><a href="./TEMPLATES/registrarse.html">Registrarse</a></li>
+                    <li><a href="#ofertas">Promociones</a></li>
+                    <li><a href="#">Iniciar Sesion</a></li>
+                </ul>
             </div>
-
-            <!-- hipervinculos del menu -->
-           <ul>
-            <li> <a href="#popular">Tendencias</a></li>
-            <li><a href="/templates/register.html">Registrarse</a></li>
-            <li> <a href="#">Iniciar Sesion</a> </li>
-           </ul> 
         </nav>
+
     </header>
 
-    <!-- contemnido -->
+    <!-- Contenido de productos -->
     <main>
-         <!-- banner -->
-        <section class="banner">
-            <div>
-                <h1>PELICULAS Y SERIES ILIMITADAS Y MUCHO MAS</h1>
-                <H2>DISFRUTA DONDE QUIERAS, CANCELA CUANDO QUIERAS</H2>
-                <a href="./templates/register.html">Registrarse</a>
-            </div>
-
+        <!-- Seccion de busqueda de productos -->
+        <section id="busqueda">
+            <h2>Que productos estas buscando?</h2>
+            
         </section>
-       
-        <!-- search -->
-        <section id="search"></section>
-        <h2 class="search-title">¿Que estas busacndo para ver?</h2>
-        
-        <!-- popular -->
-        <section id="popular">
-        <!-- Division contenedora de titulo e imagenes -->
+
+        <!-- Lo mas vendido / Ofertas -->
+        <section id="ofertas">
             <div>
-                <h2> Las tendencias de hoy </h2>
-                <div id="list-popular"> 
-                    <a href="./templates/detail-movie.html">
-                        <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
-                        <div class="movie-item-detail">
-                            <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
-                            <p class="movie-item-detail-subtitle">2023 - 7.8</p>
-                        </div>
-                    </a>
-                </div>
+                <h2>Ofertas solo por esta semana</h2>
+                <div id="lista-ofertas"> </div>
             </div>
         </section>
 
-        <!-- mejores ranquedas- top rated -->
-        <section id="top-rated">
+        <!-- Categorias de productos -->
+        <section id="phones">
             <div>
-                <h2>Las mas aclamadas</h2>
-                <div id="list-top-rated"> </div>
+                <h2>Ultimos modelos de telefonos</h2>
+                <div id="list-phones"></div>
+            </div>
+        </section>
+
+        <!-- Relojes -->
+        <section>
+            <div>
+                <h2>Relojes</h2>
+                <div id="list-relojes"></div>
             </div>
         </section>
 
     </main>
-    
 
-    <footer>
-        <a href="">Términos y condiciones</a>
-        <a href="">Peguntas frecuentes</a>
-        <a href="">Ayuda</a>
-    </footer>   
+    <!-- -Pie de pagina -->
+     <footer>
+        <a href="">Facebook</a>
+        <a href="">Tuitter</a>
+        <a href="">Tik Tok</a>
+        <a href="">Terminos y Condiciones</a>
+     </footer>    
 </body>
+
 </html>
