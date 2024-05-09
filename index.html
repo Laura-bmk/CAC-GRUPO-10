@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./static/CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- encabezado -->
+    <header>
+        <nav>
+            <!-- logo -->
+            <div id="logo">
+                <a href="/" > <span> CAC - Movies</span></a>
+            </div>
+
+            <!-- hipervinculos del menu -->
+           <ul>
+            <li> <a href="#popular">Tendencias</a></li>
+            <li><a href="/templates/register.html">Registrarse</a></li>
+            <li> <a href="#">Iniciar Sesion</a> </li>
+           </ul> 
+        </nav>
+    </header>
+
+    <!-- contemnido -->
+    <main>
+         <!-- banner -->
+        <section class="banner">
+            <div>
+                <h1>PELICULAS Y SERIES ILIMITADAS Y MUCHO MAS</h1>
+                <H2>DISFRUTA DONDE QUIERAS, CANCELA CUANDO QUIERAS</H2>
+                <a href="./templates/register.html">Registrarse</a>
+            </div>
+
+        </section>
+       
+        <!-- search -->
+        <section id="search"></section>
+        <h2 class="search-title">¿Que estas busacndo para ver?</h2>
+        
+        <!-- popular -->
+        <section id="popular">
+        <!-- Division contenedora de titulo e imagenes -->
+            <div>
+                <h2> Las tendencias de hoy </h2>
+                <div id="list-popular"> 
+                    <a href="./templates/detail-movie.html">
+                        <img src="./static/img/mario.jpg" alt="" class="movie-item-img">
+                        <div class="movie-item-detail">
+                            <p class="movie-item-detail-title">The Super Mario Bros. Movie</p>
+                            <p class="movie-item-detail-subtitle">2023 - 7.8</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- mejores ranquedas- top rated -->
+        <section id="top-rated">
+            <div>
+                <h2>Las mas aclamadas</h2>
+                <div id="list-top-rated"> </div>
+            </div>
+        </section>
+
+    </main>
+    
+
+    <footer>
+        <a href="">Términos y condiciones</a>
+        <a href="">Peguntas frecuentes</a>
+        <a href="">Ayuda</a>
+    </footer>   
+</body>
+</html>

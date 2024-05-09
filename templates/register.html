@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon" href="../static/img/mobile-screen-solid.ico">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../static/CSS/style-formulario.css">
+	<script src="https://kit.fontawesome.com/efc8487288.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/">
+                <span class="logo-texto">E-commers-Alíbaba</span>
+                <i class="fa-solid fa-mobile-screen fa-bounce"></i>
+            </a>
+        </div>
+        
+    </nav>
+    <main>
+        <section class="form-wrapper">
+            <h2>Regístrese</h2>
+            <form action="#" id="formRegister" method="GET" novalidate>
+                
+
+				<div class="form-control">
+                    <input type="text" required name="username" id="username">
+                    <label>Usurario</label>
+                </div>
+                <div class="error" id="error-username"></div>
+				       
+				<div class="form-control">
+                    <input type="text" required name="firstname" id="firstname">
+                    <label>Nombre</label>
+                </div>
+                <div class="error" id="error-firstname"></div>
+                
+				
+				<div class="form-control">
+                    <input type="text" required name="lastname" id="lastname">
+                    <label>Apellido</label>
+				</div>
+                <div class="error" id="error-lastname"></div>
+                
+				
+				<div class="form-control">
+					<input type="text" required name="dni" id="dni">
+                    <label>DNI</label>
+                </div>
+                <div class="error" id="error-dni"></div>
+                
+
+				<div class="form-control">
+                    <input type="email" required name="email" id="email">
+                    <label>Email</label>
+                </div>
+                <div class="error" id="error-email"></div>
+                
+				<div class="form-control">
+                    <input type="password" required name="password" id="password">
+                    <label>Contraseña</label>
+                </div>
+                <div class="error" id="error-password"></div>
+
+                <div class="form-control">
+                    <select required name="nationality" id="nationality" class="form-select">
+                        <option value="">Seleccione su Nacionalidad</option>
+                        <option value="AR">Argentina</option>
+                        <option value="PA">Paraguaya</option>
+                        <option value="BO">Boliviana</option>
+                        <option value="BR">Brasilera</option>
+                        <option value="UR">Uruguaya</option>
+                        <option value="OT">Otra</option>
+                    </select>
+                </div>
+                <div class="error" id="error-nationality"></div>
+
+                <br>
+                
+				            
+				<div class="form-select-file"> 
+					    <input type= "file" required name="select" id="select" accept="image/*" class="select">
+                        <label for="select" class="lblselect">Adjunte su DNI</label>
+				</div>
+                <div class="error" id="error-select"></div>
+
+
+                <div class="form-terms"> 
+                    <div class="terms">
+                        <input type="checkbox" name="terms"  id="terms" required >
+                        <label for="terms">Acepto términos y condiciones</label>
+                    </div>
+                </div>
+                <div class="error" id="error-terms"></div>
+                
+				<button type="submit">Registrarse</button>
+                <div class="form-help"><br>
+                    <a href="#">Necesitas ayuda?</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../static/JS/register-validation.js"></script>
+</body>
+
+
+
+<!--VER COMO VALIDAR CAMPO CHECKBOX ver video https://youtu.be/KZkx79BJWt4-->
+<!--FALTA VER EL TEMA DEL LOGO Y COMO LINKEAR A LAS PÁGINAS ANTERIORES-->
+<!--página para fondos gratuitos: https://www.freepik.es/fotos-vectores-gratis/fondos-para-paginas-web/2#uuid=ca7b6d02-57c5-4efe-90c1-5dd614c89bed-->
