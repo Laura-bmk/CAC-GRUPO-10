@@ -91,11 +91,15 @@ form .form-control {
     font-size: 1rem;
     padding: 0 20px;
 	cursor: pointer
+    
 }
+
 
 .form-control input:is(:focus, :valid) {
     background: #444;
     padding: 16px 20px 0;
+    
+        
 }
 
 .form-control label {
