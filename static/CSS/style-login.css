@@ -1,3 +1,5 @@
+
+
 *{
     margin:0;
     padding: 0;
@@ -26,10 +28,10 @@ nav a {
     font-size: 2em;
     font-weight: bold;
     -webkit-text-stroke: 2px black;
-    
-}  
+}   
 
-.form-login {
+/*cuerpo del login (fondo y formato campos)*/
+.form-sesion {
     background-image: url("../img/login.jpg");
     width: 580px;
     height: 440px;
@@ -38,10 +40,13 @@ nav a {
     box-shadow: 7px 13px 37px black;
     padding: 50px 80px;
     color: white;
-    outline:none;
+     
+    
 }
 
-.form-login h5{
+/*titulo del login y borde inferior cual subrayado*/
+
+.form-sesion h5{
     margin: 0;
     text-align: center;
     height: 40px;
@@ -51,59 +56,92 @@ nav a {
 
 }
 
-.controls{
-    width: 100%;
-    border:1px solid black;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    font-family: Nunito;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    
 
+
+/* campos del formulario (recuadros)*/
+
+form .form-control {
+    height: 50px;
+    position: relative;
+    margin-top: 15px;
+    background: white;
+    border-radius: 10px;
+    
 }
 
-.form-login button{
+.form-control input {
+    height: 100%;
     width: 100%;
-    height: 40px;
-    font-family: Nunito;
-    font-weight: 750;
-    font-size: 20px;
-    background: rgb(109, 200, 243);
-    border-radius: 4px;
-    border: none;
+    border: 2px solid white;
+    outline: none;
     color:black;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    font-family: Nunito;
+    padding: 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-control input:is(:focus, :valid) {
+     padding: 16px 20px 0;
+}
+
+.form-control label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #535050;
+    transition: all 0.1s ease;
+}
+
+
+/*esto es lo que hace que placeholder se achique al hacer click para ingresar input*/
+.form-control input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+form button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 20px;
+    font-family: Nunito;
+    background-color: #7cd4f7;
+    font-weight: 700;
+    border-radius: 8px;
+    outline: none;
+    margin: 15px 0 10px;
     cursor: pointer;
     transition: 0.1s ease;
     box-shadow: 3px 0px 30px rgb(202, 178, 178);
 }
 
-.form-login button:hover{
-    background-color:greenyellow;
-	cursor:pointer
-	
+form button:hover{
+    background-color: yellowgreen;
 }
 
-
-
-.form-login p {
-    height: 40px;
-    text-align: center;
-    border-bottom: 1px solid; 
-
-}
-
-.form-login a {
-    color: white;
+.form-help a {
     text-decoration: none;
+    color: white;
     font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
+      
 }
-
-.form-login a:hover {
+.form-help {
+    margin: 15px 0 10px;
     text-decoration: underline;
-
 }
+
+
+.error{
+    color: red;
+    font-weight: 10px;
+    text-shadow: 1px 1px 0px #000;
+    margin-bottom: 10px;
+}
+.form-control input.error, .form-select.error{
+    border: 3px solid red; 
+}
+

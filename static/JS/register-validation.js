@@ -59,7 +59,7 @@ const validarFormulario = (event) => {
         document.querySelector("#error-username").textContent='Debe completar el campo Usuario';
         validation=false;
     }else if(username.value.length < 4 || username.value.length > 10){
-        document.querySelector("#error-username").textContent ='El usuario debe contener entre 4 y 8 caracteres';
+        document.querySelector("#error-username").textContent ='El usuario debe contener entre 4 y 10 caracteres';
         username.classList.add('error')
         validation=false;
     }

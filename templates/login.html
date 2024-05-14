@@ -22,29 +22,36 @@
         
     </nav>
 
-
-
-
     <main>
-        <section class="form-login">
+        <section class="form-sesion">
             <h5>Iniciar Sesión</h5>
-            <input class="controls" type="text" name="username" id="username" placeholder="usuario">
-            <input class="controls" type="password" name="pass" id="pass" placeholder="contraseña">
-            <button type="submit">Ingresar</button>
-            <p><a href="#">Olvidaste tu contreseña?</a></p>
+            <form action="#" name="formLogin" id="formLogin" method="GET" novalidate>
+               
+                <div class="form-control">
+                    <input  type="text" required name="username" id="username">
+                    <label>Usuario y/o Email</label>
+                </div>
+                <div class="error" id="error-username"></div>
+                
+                <div class="form-control"> 
+                    <input type="password" required name="password" id="password">
+                    <label>Contraseña</label>
+                </div>
+                <div class="error" id="error-password"></div>
 
+                
+                <button type="submit">Ingresar</button>
+                <div class="form-help">
+                    <a href="#">Olvidaste tu contreseña?</a>
+                </div>
 
+            </form>
         </section>
 
 
-
-
-
-
-
     </main>
+    <script src="../static/JS/login-validation.js"></script>
     
-    
-    
+       
 </body>
 </html>
