@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito' , sans-serif ;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: #D3D3D3;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+
+
+/* Estilo para las tablas */
+#tabla-mas-caracteristicas table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+#tabla-mas-caracteristicas td,
+#tabla-mas-caracteristicas th {
+    border: 1px solid gainsboro;
+    text-align: left;
+    padding: 8px;
+}
+
+
+#tabla-mas-caracteristicas tr:nth-child(even) {
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
