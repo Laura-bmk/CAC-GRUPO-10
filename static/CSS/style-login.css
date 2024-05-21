@@ -9,13 +9,14 @@
 body{
 
     font-family: Nunito;
-    background-image: url("../img/persona\ con\ telefono.jpg");
+    background-image: url("../img/imagen-celulares-banner.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
- 
+    
 }
+
 
 nav a {
     position: static;
@@ -36,16 +37,18 @@ nav a {
 
 /*cuerpo del login (fondo y formato campos)*/
 .form-sesion {
-    background-image: url("../img/login2.jpg");
+    /*background-image: url("../img/login2.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    background-repeat: no-repeat;
-    width: 440px;
-    height: 440px;
+    background-repeat: no-repeat;*/
+    background: #444;
+    opacity: 0.8;
+    width: 380px;
+    /*height: 440px;*/
     margin: auto;
     margin-top: 80px;
-    box-shadow: 7px 13px 37px black;
+    box-shadow: 40px 10px 50px black;
     padding: 50px 80px;
     color: white;
      
@@ -140,6 +143,7 @@ form button:hover{
 .form-help {
     margin: 15px 0 10px;
     text-decoration: underline;
+    text-align: center;
 }
 
 
@@ -150,6 +154,6 @@ form button:hover{
     margin-bottom: 10px;
 }
 .form-control input.error, .form-select.error{
-    border: 3px solid red; 
+    border: 2px solid red; 
 }
 

@@ -12,7 +12,6 @@ body {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    
 }
 
 body::before {
@@ -62,6 +61,7 @@ nav a {
 .form-wrapper h2 {
     color: #fff;
     font-size: 2rem;
+    text-decoration: underline;
 }    
 
 .form-wrapper form {
