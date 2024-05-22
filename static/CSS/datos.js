@@ -7,7 +7,55 @@ fotos=[
     "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
     "https://rickandmortyapi.com/api/character/avatar/6.jpeg"
 ]
-
+//ArrY DE ofertas del dia
+let ofertasd=[
+    { 
+    "id": 1,
+    "modelo":"XIAOMI M5s",
+    "ram": "4gb",
+    "almacenamiento": "64gb",
+    "precio": 180000,
+    "image":"./static/img/imagenes/1.png",
+    "tendencias": "OFERTA DEL DIA"
+    },
+    {
+    "id": 2,
+    "modelo":"REALME C55 RMX3710 Dual SIM",
+    "ram": "8gb",
+    "almacenamiento": "256gb",
+    "precio": 293000,
+    "image":"./static/img/imagenes/13.png"  ,
+    "tendencias": "10% OFF"
+    },
+    {
+    "id": 3,
+    "modelo":"MOTOROLA MOTO G54 Dual SIM",
+    "ram": "8gb",
+    "almacenamiento": "256gb",
+    "precio": 450000,
+    "image":"./static/img/imagenes/23.png" ,
+    "tendencias": "Llega gratis HOY"
+    },
+    {
+    "id": 4,
+    "modelo":"XIAOMI POCO X6 5G Dual SIM",
+    "ram": "8gb",
+    "almacenamiento": "256gb",
+    "precio": 424000,
+    "image":"./static/img/imagenes/5.png",
+    "tendencias": "Llega HOY"
+    
+    },
+    {
+    "id": 5,
+    "modelo":"SAMSUNG GALAXY A15 Lte Dual SIM",
+    "ram": "6gb",
+    "almacenamiento": "128gb",
+    "precio": 258000,
+    "image":"./static/img/imagenes/16.png"  ,
+    "tendencias": "10% OFF"
+    }
+    ]    
 //Array de celulares
 let celulares= [
     { 

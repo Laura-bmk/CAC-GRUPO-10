@@ -9,7 +9,7 @@
 body{
 
     font-family: Nunito;
-    background-image: url("../img/imagen-celulares-banner.jpg");
+    background-image: url("../img/celulares_portada3.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -44,8 +44,8 @@ nav a {
     background-repeat: no-repeat;*/
     background: #444;
     opacity: 0.8;
-    width: 380px;
-    /*height: 440px;*/
+    width: 440px;
+    height: 440px;
     margin: auto;
     margin-top: 80px;
     box-shadow: 40px 10px 50px black;

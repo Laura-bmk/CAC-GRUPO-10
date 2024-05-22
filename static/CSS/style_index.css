@@ -12,6 +12,8 @@
     /*color de letras*/
     --bg-color3: #ffffff;
 }
+
+
 body {
     background-color: #D3D3D3;
 }
@@ -33,6 +35,12 @@ a {
     text-decoration: none;
 }
 
+
+.h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 /* Agregar color y tamaño de fuente a la etiqueta <h2></h2> */
 @keyframes titulo-animado {
     0% { opacity: 0; transform: translateY(-20px); }
@@ -45,7 +53,7 @@ h2 {
     animation-delay: 3s;
 }
 .h2{
-    color: #000000;
+    color: var(--bg-color3);
     font-size: 0.*9vw;
     animation:titulo-animado 12s ease-in-out infinite;
     animation-delay: 6s;
@@ -66,50 +74,27 @@ h3 {
 /* Selector de id llamado logo para resaltar el texto en negrita */
 #logo {
     font-weight: bold;
+    margin-left: 20px;
+    margin-top:70px;
 }
 
 /* Selector descendiente */
 #logo a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 
 
-#logo:hover {
-    animation: tilt-n-move-shaking 0.25s infinite;
-}
-
-@keyframes tilt-n-move-shaking {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-
-    25% {
-        transform: translate(5px, 5px) rotate(5deg);
-    }
-
-    50% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-
-    75% {
-        transform: translate(-5px, 5px) rotate(-5deg);
-    }
-
-    100% {
-        transform: translate(0, 0) rotate(0deg);
-    }
-}
 
 /* Selector por id que identifica la sección del banner. */
 #banner {
-    background-image: url('../img/imagen-celulares-banner.jpg');
+    background-image: url('../img/celulares_portada3.png');
     background-size: cover;
     /* determina cómo se ajusta el tamaño de la imagen de fondo para cubrir completamente el contenedor */
     background-position: center;
     /* coloca la imagen en el centro tanto horizontal como vertical del elemento contenedor */
-    height: 330px;
+    height: 150px;
     box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
     /* establece una sombra interna actúa como un filtro. */
 }
@@ -152,7 +137,7 @@ h3 {
 #footer{
     display: flex;
     align-items: center;
-    background-color: var(--third-color);
+    background-color: var(--third-bis-color);
     height: 100px;
     width: 100%;
    
@@ -163,7 +148,7 @@ h3 {
     height: 100px;
     display: flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 10px;
     margin:0%;
@@ -178,12 +163,16 @@ h3 {
     font-size: 1.2vw;
 }
 
+/*Ajustar tamaño de la imagen del producto*/
+
+
 .movie-item-img {
     width: 200px;
     height: 300px;
-    object-fit: cover;
+
+    object-fit: contain;
     /* Especifica cómo debe ajustarse y escalarse una imagen o un video. El valor cover asegura que el contenido se ajuste al contenedor manteniendo su proporción y cubriendo todo el espacio disponible. */
-    -o-object-fit: cover;
+    -o-object-fit: contain;
     /* Este prefijo es necesario para que Opera pueda reconocer y aplicar la propiedad. */
 }
 
@@ -195,12 +184,13 @@ h3 {
 /* Modificaremos el color de fondo, color de fuente, posición del encabezado, ancho y profundidad. */
 .header {
     /* display: flex; */
-    background-color: transparent;
+    background-color: var(--third-bis-color);
     color: #FFF;
-    position: fixed;
+    position:fixed;
+    
     /* Se utiliza para posicionar un elemento de forma fija en relación con la ventana del navegador, lo que significa que el elemento permanece en la misma posición, incluso cuando se desplaza la página. */
-    top: 0;
-    left: 0;
+    top: -70px;
+    left: 0px;
     width: 100%;
     z-index: 9999;
     /* Se utiliza comúnmente en situaciones donde tienes elementos superpuestos, como menús desplegables, ventanas emergentes, elementos flotantes, etc. Al ajustar el z-index, puedes controlar qué elementos aparecen en la parte superior y cuáles quedan ocultos detrás de otros. */
@@ -215,6 +205,7 @@ h3 {
     /* Se establece un radio de curvatura de 10 píxeles para las esquinas del elemento. */
     color: #0a0808;
     cursor: pointer;
+    
 }
 
 /* Clase Container */
@@ -237,7 +228,7 @@ h3 {
     background-color: whitesmoke;
     border: 2px solid var(--third-bis-color);
     border-radius: 15px;
-    color: var(--bg-color3);
+    color: black;
     font-size: 16px;
     height: 50px;
     margin: 20px 0px;
@@ -313,7 +304,7 @@ h3 {
 /* Estilo para los hipervínculos del menú */
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
 /* Hover para los links al pasar el mouse */
@@ -330,7 +321,7 @@ h3 {
 /* Estilos con selectores descendientes para las etiquetas de título y subtítulo del banner */
 .card-banner h1 {
     color: #FFF;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .card-banner h2 {
@@ -363,20 +354,13 @@ h3 {
     bottom: 0;
 }
 
-/* Agrega contenido adicional a un elemento */
-.movie-item-detail-subtitle::after {
-    content: '🌟';
-}
+
 
 /* Estilo para cambiar el color de las películas que se muestran en Top Rated */
 .movie-item-detail-title-v2:hover {
     color: var(--primary-color);
 }
 
-/* Agrega contenido adicional a un elemento */
-.movie-item-detail-subtitle-v2::after {
-    content: '🌟';
-}
 .grid-container {
     display: grid;
 }
@@ -434,6 +418,7 @@ h3 {
 
     .logo-text {
         display: none;
+       
     }
 
     #banner {
@@ -535,5 +520,6 @@ h3 {
         
     }
     
+
 }
 

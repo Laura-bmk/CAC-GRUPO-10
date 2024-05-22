@@ -1,4 +1,40 @@
 // Se define una variable MiInicio como una cadena vacía (``). Esta variable se usará para almacenar el contenido HTML que se generará dinámicamente.
+let miInicioOfertas = ``
+
+//For para traer la información de data y mostrarla como tarjetas
+for(let elemento of ofertasd){
+
+    //Voy iterando y agregando las tarjetas
+
+    
+
+    miInicioOfertas = miInicioOfertas +`
+                <!-- División contenedora del título e imágenes -->
+            <section id="popular">
+                <div class="container">
+                    <h3>${elemento.ram}</h3>
+                    <div id="list-popular">
+                        <div class="movie-item">
+                            <a href="./static/JS/detalle-producto.html">
+                                <img src=${elemento.image}  alt="" style="width: 200px; height: 300px; background-color: white;" class="movie-item-img producto-imagen">
+                                <div class="movie-item-detail"> 
+                                    <p class="movie-item-detail-title"><strong>Modelo:</strong>${elemento.modelo}</p>
+                                    <p class="movie-item-detail-subtitle"><strong>Ram:</strong>${elemento.ram}</p>
+                                    <p class="movie-item-detail-subtitle"><strong>Precio:</strong> ${elemento.precio}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+    `
+}
+
+
+//Selecciono el main y con innerHTML agrego lo que definí en la variable miInicio
+document.querySelector('.ofertasjs').innerHTML=miInicioOfertas
+// Se define una variable MiInicio como una cadena vacía (``). Esta variable se usará para almacenar el contenido HTML que se generará dinámicamente.
 let miInicio = ``
 
 //For para traer la información de data y mostrarla como tarjetas
@@ -14,10 +50,11 @@ for(let elemento of celulares){
                     <div id="list-popular">
                         <div class="movie-item">
                             <a href="./templates/detail-movie.html">
-                                <img src=${elemento.image}  alt="" class="movie-item-img">
+                                <img src=${elemento.image}  alt="" style="width: 200px; height: 300px; background-color: white;" class="movie-item-img producto-imagen">
                                 <div class="movie-item-detail"> 
-                                    <p class="movie-item-detail-title">precio: ${elemento.precio}</p>
+                                    <p class="movie-item-detail-title">${elemento.modelo}</p>
                                     <p class="movie-item-detail-subtitle">${elemento.ram}</p>
+                                    <p class="movie-item-detail-subtitle">precio: ${elemento.precio}</p>
                                 </div>
                             </a>
                         </div>
@@ -45,7 +82,7 @@ for(let elemento of memorias){
                     <div id="list-popular">
                         <div class="movie-item">
                             <a href="./templates/detail-movie.html">
-                                <img src=${elemento.image}  alt="" class="movie-item-img">
+                                <img src=${elemento.image}  alt="" style="width: 200px; height: 300px; background-color: white;" class="movie-item-img">
                                 <div class="movie-item-detail"> 
                                     <p class="movie-item-detail-title">${elemento.modelo}</p>
                                     <p class="movie-item-detail-subtitle">precio: ${elemento.precio}</p>
@@ -73,7 +110,7 @@ for(let elemento of parlantes){
                     <div id="list-popular">
                         <div class="movie-item">
                             <a href="./templates/detail-movie.html">
-                                <img src=${elemento.image}  alt="" class="movie-item-img">
+                                <img src=${elemento.image}  alt="" style="width: 200px; height: 300px; background-color: white;" class="movie-item-img">
                                 <div class="movie-item-detail"> 
                                     <p class="movie-item-detail-title">${elemento.modelo}</p>
                                     <p class="movie-item-detail-subtitle">precio: ${elemento.precio}</p>
@@ -101,7 +138,7 @@ for(let elemento of variados){
                     <div id="list-popular">
                         <div class="movie-item">
                             <a href="./templates/detail-movie.html">
-                                <img src=${elemento.image}  alt="" class="movie-item-img">
+                                <img src=${elemento.image}  alt="" style="width: 200px; height: 300px; background-color: white;" class="movie-item-img">
                                 <div class="movie-item-detail"> 
                                     <p class="movie-item-detail-title">${elemento.modelo}</p>
                                     <p class="movie-item-detail-subtitle">$${elemento.precio}</p>
@@ -130,7 +167,7 @@ for(let elemento of pendrives){
                     <div id="list-popular">
                         <div class="movie-item">
                             <a href="./templates/detail-movie.html">
-                                <img src=${elemento.image}  alt="" class="movie-item-img">
+                                <img src=${elemento.image}  alt="" style="width: 200px; height: 300px; background-color: white;" class="movie-item-img">
                                 <div class="movie-item-detail"> 
                                     <p class="movie-item-detail-title">${elemento.modelo}</p>
                                     <p class="movie-item-detail-subtitle">precio: ${elemento.precio}</p>
@@ -158,7 +195,7 @@ for(let elemento of cargadoresp){
                     <div id="list-popular">
                         <div class="movie-item">
                             <a href="./templates/detail-movie.html">
-                                <img src=${elemento.image}  alt="" class="movie-item-img">
+                                <img src=${elemento.image}  alt="" style="width: 200px; height: 300px; background-color: white;" class="movie-item-img">
                                 <div class="movie-item-detail"> 
                                     <p class="movie-item-detail-title">${elemento.modelo}</p>
                                     <p class="movie-item-detail-subtitle">precio: ${elemento.precio}</p>
